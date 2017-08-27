@@ -1,0 +1,303 @@
+// ---PICTURES---
+
+.pictures {
+    .row {
+        margin-top: $xl-margin-size;
+    }
+}
+
+.pictures__images {
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+
+.images__text {
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 70%;
+    font-size: $m-font-size;
+    font-weight: 700;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    p {
+        width: 44%;
+        border-bottom: 0.5rem solid $main-color;
+        padding-bottom: 0;
+    }
+    @media (max-width: 420px) {
+        display: none;
+    }
+}
+
+.pictures__text {
+    p {
+        font-size: $m-font-size;
+        font-weight: 700;
+        width: 44%;
+        border-bottom: 0.5rem solid $main-color;
+        padding-bottom: 0;
+    }
+}
+
+.pictures__text2 {
+    margin: $s-margin-size 0;
+}
+
+.pictures__text3 {
+    margin: $s-margin-size 0;
+}
+
+// ---PRICES---
+
+.prices {
+    background-color: gainsboro;
+    .grid-container {
+        margin-top: $xl-margin-size;
+        padding-bottom: $xl-padding-size * 4;
+    }
+}
+
+.prices__title {
+    padding-top: $xl-padding-size;
+    padding-bottom: $xl-padding-size;
+    h2 {
+        max-width: 250px;
+        font-size: $xl-font-size;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        border-bottom: 0.5rem solid $main-color;
+    }
+}
+
+.segment {
+    height: 550px;
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: $xl-margin-size;
+    &__dot {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: white;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        top: -30px;
+        .dot__inner-dot {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+    &__header {
+        p {
+            font-size: $l-font-size;
+            font-weight: 700;
+            color: $main-color;
+            text-transform: uppercase;
+            margin-bottom: $xl-margin-size;
+        }
+    }
+    &__price {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.5);
+        background-color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: $xl-margin-size;
+        & p:nth-child(1) {
+            font-size: $m-font-size * 2;
+            font-weight: 700;
+            margin-bottom: $s-margin-size;
+        }
+        & p:nth-child(2) {
+            text-transform: uppercase;
+        }
+    }
+    &__info {
+        width: 100%;
+        margin-bottom: $xl-margin-size;
+        padding: 0 10px;
+        p {
+            width: 100%;
+            font-size: $l-font-size;
+            padding: $xs-padding-size;
+        }
+        & p:nth-child(1) {
+            color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        & p:nth-child(2) {
+            color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        & p:nth-child(3) {
+            color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        & p:nth-child(4) {
+            color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.1);
+            margin-bottom: 0;
+        }
+    }
+    &__button {
+        width: 200px;
+        height: 50px;
+        font-size: $m-font-size;
+        text-transform: uppercase;
+        color: white;
+        background-color: $main-color;
+        border-style: none;
+        border-radius: 0.25rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: $xl-padding-size;
+        padding-right: $xl-padding-size;
+        margin-top: 60px;
+    }
+    &__button:hover {
+        color: $main-color;
+        background-color: white;
+    }
+}
+
+.segment-highlight {
+    background-color: $main-color;
+    border: 1px solid $main-color;
+    & .segment__dot {
+        border: 1px solid $main-color;
+        background-color: $main-color;
+        .dot__inner-dot {
+            background-color: white;
+        }
+    }
+    & .segment__header {
+        p {
+            color: white;
+        }
+    }
+    & .segment__price {
+        border: $main-color;
+        color: $main-color;
+        background-color: white;
+    }
+    & .segment__info {
+        & p:nth-child(1) {
+            background-color: gainsboro;
+        }
+        & p:nth-child(2) {
+            background-color: whitesmoke;
+        }
+        & p:nth-child(3) {
+            background-color: gainsboro;
+        }
+        & p:nth-child(4) {
+            background-color: whitesmoke;
+        }
+    }
+}
+
+// ---CONTACT---
+
+.contact__title {
+    padding-top: $xl-padding-size;
+    padding-bottom: $xl-padding-size * 2;
+    h2 {
+        max-width: 250px;
+        font-size: $xl-font-size;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        border-bottom: 0.5rem solid $main-color;
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    input {
+        font-size: $xl-font-size;
+        color: rgba(0, 0, 0, 0.5);
+        border: 1px solid $main-color;
+        display: block;
+        padding: $xs-padding-size;
+        margin-bottom: $m-margin-size;
+    }
+    & input:hover {
+        background-color: lighten($main-color, 40%);
+    }
+    textarea {
+        font-size: $xl-font-size;
+        color: rgba(0, 0, 0, 0.5);
+        border-color: $main-color;
+        padding: $xs-padding-size;
+    }
+    & textarea:hover {
+        background-color: lighten($main-color, 40%);
+    }
+}
+
+.contact__image {
+    max-width: 350px;
+    position: relative;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+        max-width: 264px;
+        margin-bottom: $xl-margin-size;
+    }
+    label {
+        max-width: 230px;
+        position: relative;
+        left: 60px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: $xs-margin-size;
+        div {
+            cursor: pointer;
+            position: relative;
+            top: -42px;
+            left: -60px;
+            width: 45px;
+            height: 45px;
+            border: 1px solid $main-color;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    input {
+        font-size: $xl-font-size;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        background-color: $main-color;
+        border-style: none;
+        border-radius: 0.25rem;
+        padding: $s-padding-size;
+        padding-left: $xl-padding-size;
+        padding-right: $xl-padding-size;
+    }
+    input:hover {
+        cursor: pointer;
+        color: $main-color;
+        background-color: white;
+    }
+}

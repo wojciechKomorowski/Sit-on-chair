@@ -1,0 +1,43 @@
+// ---COLORS---
+
+$header-background-color: #000;
+$main-color: mediumseagreen;
+$facebook-color: #3b5998;
+$vimeo-color: #80CEFF;
+$pinterest-color: #BD081C;
+$twitter-color: #1dcaff;
+
+// --FONT SIZES
+
+$xl-font-size: 1.5rem;
+$l-font-size: 1.25rem;
+$m-font-size: 1rem;
+$s-font-size: 0.75rem;
+$xs-font-size: 0.5rem;
+
+// --padding SIZES
+
+$xl-padding-size: 1.5rem;
+$l-padding-size: 1.25rem;
+$m-padding-size: 1rem;
+$s-padding-size: 0.75rem;
+$xs-padding-size: 0.5rem;
+
+// ---MARGINS---
+
+$xl-margin-size: 2.5rem;
+$l-margin-size: 1.5rem;
+$m-margin-size: 1rem;
+$s-margin-size: 0.75rem;
+$xs-margin-size: 0.5rem;
+
+// ---SISZES---
+
+$container-max-width: 1200px;
+
+// ---MIXINS---
+
+@mixin span-logo ($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+}

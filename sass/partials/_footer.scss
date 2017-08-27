@@ -1,0 +1,79 @@
+// ---FOOTER---
+
+.footer {
+    width: 100%;
+    margin-top: $xl-margin-size * 2;
+    margin-bottom: $xl-margin-size;
+    &__copyrights {
+        max-width: 650px;
+        p {
+            font-size: $l-font-size;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__social-icons {
+        max-width: 350px;
+        a {
+            position: relative;
+            top: -15px;
+            display: inline-block;
+            font-size: $xl-font-size * 2;
+        }
+    }
+    &__logo {
+        max-width: 200px;
+        font-size: $xl-font-size;
+        text-transform: uppercase;
+        text-align: center;
+        a {
+            color: rgba(0, 0, 0, 0.5);
+            span {
+                font-weight: 700;
+            }
+        }
+        a:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.icon-facebook-circled {
+    color: $facebook-color;
+}
+
+.icon-vimeo-circled {
+    color: $vimeo-color;
+}
+
+.icon-pinterest-circled-1 {
+    color: $pinterest-color;
+}
+
+.icon-twitter-circled {
+    color: $twitter-color;
+}
+
+.icon-facebook-circled:hover {
+    color: darken($facebook-color, 10%);
+}
+
+.icon-vimeo-circled:hover {
+    color: darken($vimeo-color, 10%);
+}
+
+.icon-pinterest-circled-1:hover {
+    color: darken($pinterest-color, 10%);
+}
+
+.icon-twitter-circled:hover {
+    color: darken($twitter-color, 10%);
+}
+// ---MODIFIERS---
+
+.--button-margin {
+    margin-top: 19.8px;
+}
+
+.--no-margin {
+    margin: 0;
+}

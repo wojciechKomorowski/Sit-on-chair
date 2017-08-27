@@ -1,0 +1,124 @@
+// ---HEADER---
+
+.header {
+    background-color: $header-background-color;
+    &__logo {
+        max-width: 200px;
+        font-size: $l-font-size;
+        margin: $m-margin-size;
+        a {
+            color: white;
+            span {
+                @include span-logo($main-color, 700);
+            }
+        }
+        a:hover {
+            color: $main-color;
+            span {
+                color: white;
+            }
+        }
+    }
+    &__nav {
+        font-size: $l-font-size;
+        text-align: center;
+        div {
+            display: inline-block;
+            a {
+                display: inline-block;
+                color: white;
+                text-transform: uppercase;
+                margin: $m-margin-size;
+            }
+        }
+        div:hover {
+            a {
+                text-decoration: underline;
+                text-decoration-color: $main-color;
+                position: relative;
+                bottom: 3px;
+            }
+        }
+    }
+}
+
+// ---LANDING---
+
+.landing {
+    background: rgba(255,255,255,1);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 60%, rgba(249,249,249,1) 70%, rgba(238,238,238,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        cursor: pointer;
+        content: '<';
+        display: inline-block;
+        font-size: $xl-font-size * 3;
+        color: $main-color;
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+    &:after {
+        cursor: pointer;
+        content: '>';
+        display: inline-block;
+        font-size: $xl-font-size * 3;
+        color: $main-color;
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+    &__image {
+        margin-top: $xl-margin-size;
+        margin-bottom: $xl-margin-size;
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+    &__info {
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+.info__header {
+    font-size: $xl-font-size * 1.5;
+    text-transform: uppercase;
+    margin-top: $xl-margin-size;
+    margin-left: $xl-margin-size;
+    margin-right: $xl-margin-size;
+    margin-bottom: $xl-margin-size;
+    span {
+        @include span-logo($main-color, 700);
+    }
+}
+
+.info__text {
+    font-size: $m-font-size;
+    margin-left: $xl-margin-size;
+    margin-right: $xl-margin-size;
+    margin-bottom: $xl-margin-size;
+}
+
+.info__button {
+    font-size: $l-font-size;
+    text-transform: uppercase;
+    color: white;
+    background-color: $main-color;
+    border-style: none;
+    border-radius: 0.25rem;
+    padding: $xs-padding-size;
+    padding-left: $xl-padding-size;
+    padding-right: $xl-padding-size;
+    margin-right: $xl-margin-size;
+    margin-left: $xl-margin-size;
+    margin-bottom: $xl-margin-size;
+}
+
+.info__button:hover {
+    color: $main-color;
+    background-color: white;
+}

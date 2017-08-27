@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ralewayregular, Arial, sans-serif;
+}
+
+// --GRID---
+
+.grid-container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    .row {
+        &:before, &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        [class*="col-"] {
+            float: left;
+            min-height: 1px;
+            padding: 0 10px;
+            &.no-gutter {
+                padding: 0;
+            }
+            &.float-right {
+                float: right;
+            }
+        }
+        @for $i from 1 through 3 {
+            .col-#{$i} {
+                width: 100%/3 * $i;
+                @media (max-width: 1150px) {
+                    width: 50%;
+                    margin-top: $xl-margin-size;
+                }
+                @media (max-width: 780px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// ---GENERAL-RULES---
+
+[type*="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: $main-color;
+}
