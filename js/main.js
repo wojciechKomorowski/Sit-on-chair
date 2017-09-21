@@ -38,3 +38,61 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+$(function(){
+
+function menuAnimation(){
+    let headerNav = $('.header__nav');
+    let companyNav = headerNav.find('div');
+    let subMenu = $('.menu');
+
+    
+    companyNav.on('mouseenter', function() {
+        $(this).find('.menu').fadeIn(100);
+    });  
+    companyNav.on('mouseleave', function() {
+        $(this).find('.menu').fadeOut('slow');
+    }); 
+};
+
+menuAnimation();
+
+function slider() {
+    let previousArrow = $('.landing').children().first();
+    let nextArrow = $('.landing').children().last();
+    let imageContainer = $('.landing__image');
+    let images = imageContainer.children();
+    let counter = 0;
+
+    console.log(images[counter]);
+    
+    nextArrow.on('click', function() {
+        if (counter >= images.length - 1) {
+            images.eq(2).addClass('display-none');
+            images.eq(1).addClass('display-none');
+            images.eq(0).removeClass('display-none');
+            counter = 0;
+        } else {
+            images.eq(counter).addClass('display-none');
+            counter++;
+            images.eq(counter).removeClass('display-none');
+        }
+    });
+
+    previousArrow.on('click', function() {
+        if (counter <= 0) {
+            images.eq(0).addClass('display-none');
+            images.eq(1).addClass('display-none');
+            images.eq(2).removeClass('display-none');
+            counter = 2;
+        } else {
+            images.eq(counter).addClass('display-none');
+            counter--;
+            images.eq(counter).removeClass('display-none');
+        }
+    });
+}
+
+slider();
+
+});
