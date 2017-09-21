@@ -31,11 +31,11 @@
         @for $i from 1 through 3 {
             .col-#{$i} {
                 width: 100%/3 * $i;
-                @media (max-width: 1150px) {
+                @media (max-width: 1175px) {
                     width: 50%;
                     margin-top: $xl-margin-size;
                 }
-                @media (max-width: 780px) {
+                @media (max-width: 790px) {
                     width: 100%;
                 }
             }

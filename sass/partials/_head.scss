@@ -22,10 +22,16 @@
     &__nav {
         font-size: $l-font-size;
         text-align: center;
+        @media (max-width: 402px) {
+            margin: 10px 0;
+        }
         div {
-            display: inline-block;
+            display: inline-flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
             a {
-                display: inline-block;
+                display: block;
                 color: white;
                 text-transform: uppercase;
                 margin: $m-margin-size;
@@ -42,6 +48,32 @@
     }
 }
 
+.menu {
+    font-size: 1rem;
+    color: white;
+    padding-top: 2rem;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 40px;
+    li {
+        min-width: 200px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;  
+    }
+    li:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 402px) {
+        position: static;
+        min-width: 250px;
+        padding-top: 0;
+        border: 1px solid white;
+        width: 100%;
+    }
+}
+
 // ---LANDING---
 
 .landing {
@@ -51,26 +83,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    &:before {
-        cursor: pointer;
-        content: '<';
-        display: inline-block;
-        font-size: $xl-font-size * 3;
-        color: $main-color;
-        @media (max-width: 700px) {
-            display: none;
-        }
-    }
-    &:after {
-        cursor: pointer;
-        content: '>';
-        display: inline-block;
-        font-size: $xl-font-size * 3;
-        color: $main-color;
-        @media (max-width: 700px) {
-            display: none;
-        }
-    }
     &__image {
         margin-top: $xl-margin-size;
         margin-bottom: $xl-margin-size;
@@ -82,6 +94,21 @@
         max-width: 500px;
         text-align: center;
     }
+}
+
+.landing__arrow {
+    font-size: $xl-font-size * 3;
+    color: $main-color;
+    position: relative;
+    cursor: pointer;
+    margin: 0 2rem;
+    @media (max-width: 860px) {
+        display: none;
+    }  
+}
+
+.landing__arrow:hover {
+    color: darken($main-color, 10%);
 }
 
 .info__header {
@@ -122,3 +149,12 @@
     color: $main-color;
     background-color: white;
 }
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+  
