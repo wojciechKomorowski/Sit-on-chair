@@ -5,14 +5,16 @@
     margin-top: $xl-margin-size * 2;
     margin-bottom: $xl-margin-size;
     &__copyrights {
-        max-width: 650px;
+        display: flex;
+        justify-content: center;
         p {
             font-size: $l-font-size;
             color: rgba(0, 0, 0, 0.5);
         }
     }
     &__social-icons {
-        max-width: 350px;
+        display: flex;
+        justify-content: center;
         a {
             position: relative;
             top: -15px;
@@ -21,10 +23,10 @@
         }
     }
     &__logo {
-        max-width: 200px;
+        display: flex;
+        justify-content: center;
         font-size: $xl-font-size;
         text-transform: uppercase;
-        text-align: center;
         a {
             color: rgba(0, 0, 0, 0.5);
             span {
@@ -33,6 +35,10 @@
         }
         a:hover {
             color: $main-color;
+        }
+        @media (min-width: 790px) and (max-width: 1175px) {
+            margin-left: 25%;
+            margin-right: 75%;
         }
     }
 }
