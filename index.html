@@ -55,10 +55,11 @@
             </div>
         </div>
     </header>
+
     <section class="landing">
-        <div class="landing__arrow">
-                <p><</p>    
-        </div>
+        <button class="landing__arrow">
+                <  
+        </button>
         <div class="landing__image">
             <img src="images/black_chair.png" alt="black chair">
             <img src="images/orange.png" alt="orange-chair" class="display-none">
@@ -75,10 +76,11 @@
                 Zobacz więcej
             </button>
         </div>
-        <div class="landing__arrow">
-            <p>></p>
-        </div>
+        <button class="landing__arrow">
+            >
+        </button>
     </section>
+
     <section class="pictures">
         <div class="grid-container">
             <div class="row">
@@ -108,6 +110,7 @@
             </div>
         </div>
     </section>
+
     <section class="prices">
         <div class="grid-container">
             <div class="row">
@@ -161,7 +164,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-1">
+                <div class="col-1 media__display">
                     <div class="segment">
                         <div class="segment__dot">
                             <div class="dot__inner-dot"></div>
@@ -187,6 +190,69 @@
             </div>
         </div>
     </section>
+
+    <section class="order">
+        <div class="grid-container">
+                <div class="row">
+                        <div class="col-1">
+                            <div class="order__title">
+                                <h2>Skomponuj swoje krzesło</h2>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row">
+                    <div class="col-1">
+                        <form class="order__form">
+                                <select id="chairsType">
+                                    <option value="Chair Clair" selected>Chair Clair</option>
+                                    <option value="Chair Margarita">Chair Margarita</option>
+                                    <option value="Chair Selena">Chair Selena</option>
+                                </select>
+                                <select id="chairsColor">
+                                        <option value="Czarny" selected>Czarny</option>
+                                        <option value="Pomarańczowy">Pomarańczowy</option>
+                                        <option value="Czerwony">Czerwony</option>
+                                </select>
+                                <select id="chairsMaterial">
+                                        <option value="Tkanina" selected>Tkanina</option>
+                                        <option value="Skóra">Skóra</option>
+                                </select>
+                            <div class="form__checkbox">
+                                    <input type="checkbox" id="transport" name="transport" value="fsdf">
+                                    <div id="indicator2"></div>
+                                    <label for="transport">Transport</label>
+                            </div>
+                        </form>
+                    </div>    
+                    <div class="col-1">
+                            <div class="order__image">
+                                    <img src="images/black_chair.png" alt="black chair">
+                            </div>
+                    </div>
+                    <div class="col-1">
+                            <div class="order__summary">
+                                <div class="summary__left">
+                                    <p class="summary__model">Chair Clair</p>
+                                    <p class="summary__color">Czarny</p>
+                                    <p class="summary__material">Tkanina</p>
+                                </div>
+                                <div class="summary__right">
+                                    <p class="model__price">200</p>
+                                    <p>0</p>
+                                    <p class="material__price">0</p>
+                                    <p class="transport__price">0</p>
+                                </div>
+                                <div class="summary__bottom">
+                                    <p>Suma</p>
+                                    <p class="summary__finalsum">XXX</p>
+                                </div>
+                                <input type="button" value="Zamów">
+                            </div>
+                    </div>         
+            </div>
+        </div>
+    </section>    
+
     <section class="contact">
         <div class="grid-container">
             <div class="row">
@@ -208,8 +274,7 @@
                     <img src="images/red_chair.png" alt="redchair">
                     <label for="personalData">Zgadzam się na przetwarzanie danych osobowych
                         <input type="checkbox"name="personaldata"id="personalData" checked>
-                        <div id="indicator">
-                            <img src="images/form_ok.jpg"alt="ok">
+                        <div id="indicator">   
                         </div>
                     </label>
                     <input type="button" value="Wyślij">
@@ -217,10 +282,11 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="grid-container">
             <div class="row">
-                <div class=" col-2 footer__copyrights">
+                <div class=" col-1 footer__copyrights">
                     <p>
                         Copyright 2017 | All rights reserved - Sit On Chair
                     </p>
