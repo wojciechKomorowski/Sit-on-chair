@@ -33,6 +33,12 @@
     }
 }
 
+.pictures__info {
+    @media (min-width: 790px) and (max-width: 1175px) {
+        margin-left: 25%;
+    }
+}
+
 .pictures__text {
     p {
         font-size: $m-font-size;
@@ -176,6 +182,12 @@
     }
 }
 
+.media__display {
+    @media (min-width: 790px) and (max-width: 1175px) {
+        margin-left: 25%;
+    }
+}
+
 .segment-highlight {
     background-color: $main-color;
     border: 1px solid $main-color;
@@ -212,11 +224,127 @@
     }
 }
 
+// ---ORDER---
+
+.order__title {
+    padding-top: $xl-padding-size;
+    padding-bottom: $xl-padding-size;
+    h2 {
+        max-width: 250px;
+        font-size: $xl-font-size;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        border-bottom: 0.5rem solid $main-color;
+    }
+}
+
+.order__form {
+    display: flex;
+    flex-direction: column;
+    select {
+        cursor: pointer;
+        font-size: $xl-font-size;
+        color: rgba(0, 0, 0, 0.5);
+        border: 1px solid $main-color;
+        display: block;
+        padding: $xs-padding-size;
+        margin-bottom: $m-margin-size;
+    }
+    & select:hover {
+        background-color: lighten($main-color, 40%);
+    }
+}
+
+.form__checkbox {
+    display: inline-flex;
+    align-items: center;
+    div#indicator2 {
+        cursor: pointer;
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        border: 1px solid $main-color;
+    }
+    label {
+        font-size: $xl-font-size;
+        color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        left: 1rem;
+    }
+}
+
+.order__image {
+    text-align: center;
+    img {
+        max-width: 350px;
+        @media (max-width: 420px) {
+            width: 290px;
+        }
+    }
+}
+
+.order__summary {
+    font-size: $xl-font-size;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    .summary__left {
+        width: 70%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding-bottom: 10px;
+        .summary__model {
+            color: $main-color;
+        }
+    }
+    .summary__right {
+        width: 29%;
+        color: $main-color;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .summary__bottom {
+        width: 100%;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    input {
+        max-width: 350px;
+        min-width: 250px;
+        font-size: $xl-font-size;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        background-color: $main-color;
+        border-style: none;
+        border-radius: 0.25rem;
+        padding: $xs-padding-size;
+        padding-left: $xl-padding-size;
+        padding-right: $xl-padding-size;
+    }
+    input:hover {
+        cursor: pointer;
+        color: $main-color;
+        background-color: white;
+    }
+    @media (min-width: 790px) and (max-width: 1175px) {
+        margin-left: 25%;
+        margin-right: -75%;
+    }
+}
+
 // ---CONTACT---
 
 .contact__title {
     padding-top: $xl-padding-size;
-    padding-bottom: $xl-padding-size * 2;
+    padding-bottom: 4 * $m-padding-size;
+    margin-top: $xl-margin-size;
     h2 {
         max-width: 250px;
         font-size: $xl-font-size;
@@ -229,7 +357,6 @@
 .contact__form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
     input {
         font-size: $xl-font-size;
         color: rgba(0, 0, 0, 0.5);
@@ -253,37 +380,36 @@
 }
 
 .contact__image {
-    max-width: 350px;
-    position: relative;
-    top: -30px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     img {
         max-width: 264px;
-        margin-bottom: $xl-margin-size;
+        margin-bottom: 40px;;
+        margin-top: -25px;
     }
     label {
-        max-width: 230px;
+        max-width: 200px;
+        max-height: 96px;
         position: relative;
         left: 60px;
         color: rgba(0, 0, 0, 0.5);
-        margin-bottom: $xs-margin-size;
-        div {
+        div#indicator {
             cursor: pointer;
+            text-align: center;
             position: relative;
-            top: -42px;
-            left: -60px;
+            top: -51px;
+            right: 60px;
             width: 45px;
             height: 45px;
             border: 1px solid $main-color;
-            img {
-                width: 100%;
-                height: 100%;
-            }
         }
     }
     input {
+        max-width: 350px;
+        min-width: 250px;
         font-size: $xl-font-size;
         font-weight: 700;
         text-transform: uppercase;
@@ -291,7 +417,7 @@
         background-color: $main-color;
         border-style: none;
         border-radius: 0.25rem;
-        padding: $s-padding-size;
+        padding: $xs-padding-size;
         padding-left: $xl-padding-size;
         padding-right: $xl-padding-size;
     }
