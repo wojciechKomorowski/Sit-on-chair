@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let checkboxPersonalData = document.getElementById('indicator');
     let checkboxTransport = document.getElementById('indicator2');
-    let backgroundUrl = '../images/form_ok.jpg';
+    let backgroundUrl = './images/form_ok.jpg';
 
     checkboxPersonalData.style.background = 'url("none")';
     checkboxTransport.style.background = 'url("none")';
