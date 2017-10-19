@@ -84,6 +84,7 @@
     justify-content: center;
     align-items: center;
     &__image {
+        max-width: 450px;
         margin-top: $xl-margin-size;
         margin-bottom: $xl-margin-size;
         @media (max-width: 700px) {
@@ -99,6 +100,9 @@
 .landing__arrow {
     font-size: $xl-font-size * 3;
     color: $main-color;
+    background: none;
+    border: none;
+    outline: none;
     position: relative;
     cursor: pointer;
     margin: 0 2rem;
@@ -155,6 +159,8 @@
 }
 
 .display-none {
-    display: none;
+    display: none; 
 }
+
+
   
