@@ -35,17 +35,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let checkboxTransport = document.getElementById('indicator2');
     let backgroundUrl = './images/form_ok.jpg';
 
-    checkboxPersonalData.style.background = 'url("none")';
-    checkboxTransport.style.background = 'url("none")';
+    checkboxPersonalData.style.background = 'none';
+    checkboxTransport.style.background = 'none';
 
     function changeCheckboxStyle(element) {
-        if (element.style.background === 'url("none")') {
+        if (element.style.background === 'none') {
             element.style.background = `url(${backgroundUrl})`;
             element.style.backgroundPosition = "center center";
             element.style.backgroundRepeat = "no-repeat";
             element.style.backgroundSize= "90%";
         } else {
-            element.style.background = 'url("none")';
+            element.style.background = 'none';
         }
     }
 
