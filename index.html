@@ -196,7 +196,7 @@
                 <div class="row">
                         <div class="col-1">
                             <div class="order__title">
-                                <h2>Skomponuj swoje krzesło</h2>
+                                <h2>Skomponuj krzesło</h2>
                             </div>
                         </div>
                     </div>
@@ -204,18 +204,21 @@
                     <div class="col-1">
                         <form class="order__form">
                                 <select id="chairsType">
-                                    <option value="Chair Clair" selected>Chair Clair</option>
-                                    <option value="Chair Margarita">Chair Margarita</option>
-                                    <option value="Chair Selena">Chair Selena</option>
+                                    <option data-price="0"></option>
+                                    <option data-price="200" value="Chair Clair">Chair Clair</option>
+                                    <option data-price="300" value="Chair Margarita">Chair Margarita</option>
+                                    <option data-price="250" value="Chair Selena">Chair Selena</option>
                                 </select>
                                 <select id="chairsColor">
-                                        <option value="Czarny" selected>Czarny</option>
-                                        <option value="Pomarańczowy">Pomarańczowy</option>
-                                        <option value="Czerwony">Czerwony</option>
+                                    <option data-price="0"></option>
+                                    <option data-price="0" value="Czarny">Czarny</option>
+                                    <option data-price="0"value="Pomarańczowy">Pomarańczowy</option>
+                                    <option data-price="0"value="Czerwony">Czerwony</option>
                                 </select>
                                 <select id="chairsMaterial">
-                                        <option value="Tkanina" selected>Tkanina</option>
-                                        <option value="Skóra">Skóra</option>
+                                    <option data-price="0"></option>
+                                    <option data-price="0" value="Tkanina">Tkanina</option>
+                                    <option data-price="80" value="Skóra">Skóra</option>
                                 </select>
                             <div class="form__checkbox">
                                     <input type="checkbox" id="transport" name="transport" value="fsdf">
@@ -232,19 +235,20 @@
                     <div class="col-1">
                             <div class="order__summary">
                                 <div class="summary__left">
-                                    <p class="summary__model">Chair Clair</p>
-                                    <p class="summary__color">Czarny</p>
-                                    <p class="summary__material">Tkanina</p>
+                                    <p class="summary__model">Twój fotel</p>
+                                    <p class="summary__color">kolor</p>
+                                    <p class="summary__material"> materiał</p>
+                                    <p class="summary__transport">transport</p>
                                 </div>
                                 <div class="summary__right">
-                                    <p class="model__price">200</p>
+                                    <p class="model__price">0</p>
                                     <p>0</p>
                                     <p class="material__price">0</p>
                                     <p class="transport__price">0</p>
                                 </div>
                                 <div class="summary__bottom">
                                     <p>Suma</p>
-                                    <p class="summary__finalsum">XXX</p>
+                                    <p class="summary__result">0</p>
                                 </div>
                                 <input type="button" value="Zamów">
                             </div>
