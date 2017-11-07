@@ -71,7 +71,7 @@
     padding-top: $xl-padding-size;
     padding-bottom: $xl-padding-size;
     h2 {
-        max-width: 250px;
+        max-width: 270px;
         font-size: $xl-font-size;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
@@ -228,9 +228,9 @@
 
 .order__title {
     padding-top: $xl-padding-size;
-    padding-bottom: $xl-padding-size;
+    padding-bottom: $xl-padding-size * 2;
     h2 {
-        max-width: 250px;
+        max-width: 270px;
         font-size: $xl-font-size;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
@@ -343,10 +343,10 @@
 
 .contact__title {
     padding-top: $xl-padding-size;
-    padding-bottom: 4 * $m-padding-size;
+    padding-bottom: $xl-padding-size * 2;
     margin-top: $xl-margin-size;
     h2 {
-        max-width: 250px;
+        max-width: 270px;
         font-size: $xl-font-size;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
@@ -387,8 +387,8 @@
     justify-content: space-between;
     img {
         max-width: 264px;
-        margin-bottom: 40px;;
-        margin-top: -25px;
+        margin-bottom: 35px;;
+        margin-top: -20px;
     }
     label {
         max-width: 200px;
